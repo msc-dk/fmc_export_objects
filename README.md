@@ -12,6 +12,12 @@ This project can be used to export all objects from a Cisco Firepower Management
 
 ## Usage
 
-Enter information when you run script, and a file named objects.csv should be created in script directory
-If it doesn't work, too bad... I'm new to this :'(
+Enter information when you run script, and a file named "all_objects.csv" should be created in script directory
+If it doesn't work, too bad... (but let me know) I'm new to this :'(
 
+## csv format
+
+name,type,value
+
+In case of NetworkObjectGroups or PortObjectGroups, the object will be presented multiple times with different values.
+example provided in examples folder.
