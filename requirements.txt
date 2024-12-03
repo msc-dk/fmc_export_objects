@@ -1,0 +1,15 @@
+certifi
+charset-normalizer
+decorator
+firerest
+idna
+packaging
+py
+python-dateutil
+pytz
+requests
+retry
+simplejson
+tzdata
+urllib3
+six
