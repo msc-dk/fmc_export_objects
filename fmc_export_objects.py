@@ -1,14 +1,15 @@
 import requests
 import csv
+from getpass import getpass
 from fireREST import FMC
 
 # disable SSL warnings
 requests.packages.urllib3.disable_warnings()
 
 #define variables
-fmc_ip = '172.16.0.66'
-username = 'apiUser'
-password = 'test1234'
+fmc_ip = input("Enter FMC IP: ")
+username = input("Enter username for API access: ")
+password = getpass("Password: ")
 fmc = FMC(hostname=fmc_ip, username=username, password=password, domain='Global')
 #initialize list with all FMC objects
 object_all_list = []
